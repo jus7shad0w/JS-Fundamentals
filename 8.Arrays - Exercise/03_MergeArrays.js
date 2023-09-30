@@ -4,7 +4,7 @@ function mergeArrays(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
         let num1 = arr1[i];
         let num2 = arr2[i];
-        // num = arr1[i];
+       
         if (i % 2 == 0) {
             newArr.push(Number(num1) + Number(num2))
         } else {
