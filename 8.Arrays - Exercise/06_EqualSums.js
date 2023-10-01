@@ -15,6 +15,7 @@ function equalSum(input) {
     } else {
         console.log('no');
     }
+    
 }
 equalSum([1, 2, 3, 3])
 equalSum([1, 2])
