@@ -19,4 +19,4 @@ function addRemove(arr) {
     }
 }
 addRemove(['add', 'add', 'add', 'add'])
-addRemove(['add', 'add', 'remove', 'add', 'add'])
+addRemove(['add', 'add', 'remove', 'add', 'add']) 
