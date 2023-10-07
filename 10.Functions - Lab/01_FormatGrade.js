@@ -1,4 +1,5 @@
 function formatGrade(num) {
+    
     if (num < 3.00) {
         console.log(`Fail (2)`);
     } else if (num < 3.50) {
