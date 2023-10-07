@@ -7,7 +7,6 @@ function calculator(num1, num2, op) {
     }
     const result = func[op](num1, num2);
 
-
     console.log(result);
 }
 
