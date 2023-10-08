@@ -6,6 +6,7 @@ function addSubstract(num1, num2, num3) {
     function substract(sum) {
         return sum - num3;
     }
+    
     let sum = add();
     let diferrence = substract(sum);
     console.log(diferrence);
