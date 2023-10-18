@@ -35,6 +35,7 @@ function arrayManipulator(array, commandLine) {
                 for (let i = 0; i < array.lenght; i += 2) {
                     let pair = (array[i] || 0) + (array[i + 1] || 0)
                     array.push(pair);
+                    break;
                 }
             case `print`:
                 console.log(`[ ${array.join(', ')} ]`);
