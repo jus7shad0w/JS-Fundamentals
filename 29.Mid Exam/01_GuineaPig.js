@@ -19,6 +19,6 @@ function guineaPig(input) {
     }
     console.log(`Everything is fine! Puppy is happy! Food: ${(food / 1000).toFixed(2)}, Hay: ${(hay / 1000).toFixed(2)}, Cover: ${(cover / 1000).toFixed(2)}.`);
 }
-// guineaPig(["10", "5", "5.2", "1"])
-// guineaPig(["1", "1.5", "3", "1.5"])
+guineaPig(["10", "5", "5.2", "1"])
+guineaPig(["1", "1.5", "3", "1.5"])
 guineaPig(["9", "5", "5.2", "1"])
