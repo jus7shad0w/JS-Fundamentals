@@ -3,7 +3,9 @@ function spaceTravel(input) {
     let fuel = input.pop();
     let travel = input[0].split("||");
     for (let i = 0; i < travel.length; i++) {
-        let [action, num] = travel[i].split(' ');
+        cases = travel[i].split(' ');
+        let action = cases[0];
+        let num = Number(cases[1]);
 
         if (action === "Titan") {
             console.log("You have reached Titan, all passengers are safe.");
@@ -14,18 +16,18 @@ function spaceTravel(input) {
             } else {
                 console.log(`The spaceship travelled ${num} light-years.`);
             }
-        } else if (action == "Enemy") {
+        } else if (action === "Enemy") {
             if (ammunition >= Number(num)) {
                 console.log(`An enemy with ${num} armour is defeated.`);
                 ammunition -= num;
-            } else if (ammunition <= Number(num) && fuel > Number(num) * 2) {
+            } else if (ammunition < Number(num) && fuel > Number(num) * 2) {
                 fuel -= Number(num) * 2;
                 console.log(`An enemy with ${num} armour is outmaneuvered.`);
             } else {
                 console.log("Mission failed.");
                 return;
             }
-        } else if (action == "Repair") {
+        } else if (action === "Repair") {
             fuel += Number(num);
             ammunition += Number(num) * 2;
             console.log(`Ammunitions added: ${num * 2}.`);
