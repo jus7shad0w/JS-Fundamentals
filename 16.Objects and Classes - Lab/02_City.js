@@ -1,4 +1,5 @@
 function city(log) {
+    
     for (let [key, value] of Object.entries(log)) {
         console.log(key, '->', value);
     }
