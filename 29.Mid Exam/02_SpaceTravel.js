@@ -38,3 +38,5 @@ function spaceTravel(input) {
 spaceTravel(['Travel 10||Enemy 30||Repair 15||Titan', '50', '80'])
 spaceTravel(['Travel 20||Enemy 50||Enemy 50||Enemy 10||Repair 15||Enemy 50||Titan', '60', '100'])
 spaceTravel(['Enemy 10||Repair 20||Titan||Enemy 50', '60', '100'])
+// let action = travel[i].split(' ');
+//  console.log(action[0], action[1])
